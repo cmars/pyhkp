@@ -1,0 +1,23 @@
+
+pyhkp
+=====
+A really simple python implementation of The OpenPGP HTTP Keyserver Protocol.
+
+Requirements
+------------
+
+* PyGPGME (https://launchpad.net/pygpgme)
+* Flask   (http://flask.pocoo.org/)
+
+Status
+------
+
+Just a quick proof-of-concept, really. I might be using these libraries in some 
+upcoming projects.
+
+Using GPG for key storage and search probably has some performance implications 
+for a sufficiently busy server.
+
+In addition, serving up public keys out of your personal GnuPG keyring (~/.gnupg) 
+might not be something you want to do. Consider changing the Context location. 
+
